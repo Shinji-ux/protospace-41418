@@ -40,7 +40,7 @@ class PrototypesController < ApplicationController
     end
   end
 
-  def destroy
+  def delete
     prototype = Prototype.find(params[:id])
     prototype.destroy
     redirect_to root_path
